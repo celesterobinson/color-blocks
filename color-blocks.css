@@ -1,0 +1,114 @@
+body {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.box {
+  display: flex;
+  flex-flow: row wrap;
+  /* VVVV SAM WAS HERE VVVV */
+  width: calc(50% - 20px); 
+  background-color: black;
+  margin: 10px;
+}
+
+/* VVVV SAM WAS HERE VVVV */
+@media(max-width: 600px){
+  .box{
+    width: 100%;
+  }
+}
+
+/*All box grids*/
+.box > :first-child {
+  justify-content: flex-start;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100px;
+  height: 100px;
+  margin: 25px;
+  border: solid white 2px;
+}
+
+/*All Box Grid divs*/
+.box > :first-child div {
+  width: 50px;
+  height: 50px;
+}
+
+/*First Box*/
+.box:nth-of-type(1) > :first-child > :first-child {
+  background-color: #8A0707;
+}
+
+.box:nth-of-type(1) > :first-child > :nth-child(2) {
+  background-color: black;
+}
+
+.box:nth-of-type(1) > :first-child > :nth-child(3) {
+  background-color: #424242;
+
+} 
+
+.box:nth-of-type(1) > :first-child > :nth-child(4) {
+  background-color: white;
+} 
+
+
+/*Second Box*/
+.box:nth-of-type(2) > :first-child > :first-child {
+  background-color: #298f00;
+}
+
+.box:nth-of-type(2) > :first-child > :nth-child(2) {
+  background-color: #6b0d0d;
+}
+
+.box:nth-of-type(2) > :first-child > :nth-child(3) {
+  background-color: black;
+
+} 
+
+.box:nth-of-type(2) > :first-child > :nth-child(4) {
+  background-color: #0f5e9c;
+}
+
+/*Third Box*/
+.box:nth-of-type(3) > :first-child > :first-child {
+  background-color: #dcb860;
+}
+
+.box:nth-of-type(3) > :first-child > :nth-child(2) {
+  background-color: #8A0707;
+}
+
+.box:nth-of-type(3) > :first-child > :nth-child(3) {
+  background-color: #8600c8;
+} 
+
+.box:nth-of-type(3) > :first-child > :nth-child(4) {
+  background-color: black;
+}
+
+/*Fourth Box*/
+.box:nth-of-type(4) > :first-child > :first-child {
+  background-color: #1E64BF;
+}
+
+.box:nth-of-type(4) > :first-child > :nth-child(2) {
+  background-color: #FFC500;
+}
+
+.box:nth-of-type(4) > :first-child > :nth-child(3) {
+  background-color: #F017DA;
+} 
+
+.box:nth-of-type(4) > :first-child > :nth-child(4) {
+  background-color: #643E24;
+}
+
+h1, p {
+  margin: 25px;
+  color: white;
+}
